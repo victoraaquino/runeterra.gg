@@ -13,8 +13,6 @@ export default function App() {
   const [cards, setCards] = useState(cardsJsonFull);
   const [regions, SetRegions] = useState(regionsJson.regions);
 
-  let text = '';
-
   function handleFilterCards(value) {
     if(value === ""){
       setCards(cardsJsonFull);
