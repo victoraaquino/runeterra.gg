@@ -35,7 +35,7 @@ export default function App() {
         </div>
         {cards.length === 0 ?  <h4>Não possui Cards.</h4> : ''}
         {cards.map(card => {
-            return <img src={card.assets[0].gameAbsolutePath} className="card-img" />
+            return <img src={card.assets[0].gameAbsolutePath} className="card-img" alt={card.name} title={card.name} />
         })}
       </div>
     </>
